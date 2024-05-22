@@ -1,6 +1,6 @@
 FROM alpine as builder
 
-RUN apk add --no-cache cargo rust
+RUN apk add --no-cache cargo rust musl openssl
 
 
 COPY ./ /src
