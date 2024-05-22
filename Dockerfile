@@ -1,9 +1,7 @@
 FROM alpine as builder
 
-RUN apk update && \
-    apk install -y \
-    cargo \
-    rust
+RUN apk add --no-cache cargo rust
+
 
 COPY ./src /src
 WORKDIR /src
