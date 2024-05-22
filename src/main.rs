@@ -55,6 +55,7 @@ fn main() {
                 // if the file was modified, print a message
                 if ok.unwrap() {
                     if cli.check {
+                        errors_found = true;
                         writeln!(stderr(), "❌ {} is unsorted", file.display()).unwrap();
                     } else {
                         println!("✅ {} sorted", file.display());
