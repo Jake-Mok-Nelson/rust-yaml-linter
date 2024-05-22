@@ -9,5 +9,7 @@ RUN cargo build --release
 
 FROM alpine as final
 
-COPY --from=builder /src/target/release/main /usr/local/bin
-COPY --from=builder /src/target/release/generate-yaml /usr/local/bin
+COPY --from=builder /src/target/release/main /usr/local/bin/rust-yaml-linter
+COPY --from=builder /src/target/release/generate-yaml /usr/local/bin/
+
+CMD ["rust-yaml-linter"]
