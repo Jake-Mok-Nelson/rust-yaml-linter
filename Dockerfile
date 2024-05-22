@@ -3,7 +3,7 @@ FROM alpine as builder
 RUN apk add --no-cache cargo rust
 
 
-COPY ./src /src
+COPY ./ /src
 WORKDIR /src
 RUN cargo build --release
 
