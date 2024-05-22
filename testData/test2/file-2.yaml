@@ -1,0 +1,13 @@
+name: File 2
+description: This is another test YAML file.
+items:
+  - itemA
+  - itemB
+  - itemC
+---
+name: File 2 Cont
+description: This is another test YAML file.
+items:
+  - itemA
+  - itemD
+  - itemC

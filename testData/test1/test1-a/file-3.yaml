@@ -1,0 +1,6 @@
+name: File 3
+description: This is a test YAML file with out of order items.
+items:
+  - itemC
+  - itemA
+  - itemB

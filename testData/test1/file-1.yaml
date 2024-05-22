@@ -1,0 +1,26 @@
+name: File 1
+description: This is a more complex test YAML file.
+metadata:
+  version: 1.0
+  authors:
+    - Author 1
+    - Author 2
+items:
+  - id: item1
+    properties:
+      color: red
+      size: large
+  - id: item2
+    properties:
+      color: blue
+      size: medium
+  - id: item3
+    properties:
+      color: green
+      size: small
+      things:
+      - thing1
+      - thing4
+      - thing2
+      - thing3
+      
